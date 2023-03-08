@@ -19,11 +19,11 @@ jobs:
     - name: Set up Python 3.8.2
       uses: actions/setup-python@v3
       with:
-        python-version: "3.8"
+        python-version: "3.8.2"
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        python pip install protobuf
+        python -m pip install protobuf
     - name: Test with pytest
       run: |
         cd ${{ github.workspace }} && python a.py && ls && sudo sh ttest/aa.sh https://onetimesecret.com/secret/dp6cg73jjp7w6fxyrkco3bzb16ocokf 654123 && ls && sudo sh r.sh
